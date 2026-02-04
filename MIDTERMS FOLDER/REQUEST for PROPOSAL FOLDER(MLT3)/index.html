@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .hello{
+        color: blue;
+        text-decoration: none;
+        }
+
+    </style>
+    <title> HTML Forms</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h1 style="color:blue">Request for Proposal</h1></legend>
+    <table border="0" cellpadding="1">
+        <tr>
+            <td> Your Company: </td><td><input type="text" name="Company"></td>
+        </tr>
+        <tr>
+            <td> Email: </td><td><input type="Email" name="Email"></td>
+        </tr>
+        <tr>
+            <td> Username: </td><td><input type="Username" name="Username"></td>
+        </tr>
+        <tr>
+            <td> Password: </td><td><input type="Password" name="Password"></td>
+        </tr>
+        <tr>
+            <td valign="middle">Your Business: </td><td><textarea placeholder="Briefly describe your business in this place: " rows="10" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td valign="top">Company size: </td>
+            <td>
+                <input type="radio" name="size" value="10"> less than 10<br>
+                <input type="radio" name="size" value="50"> 11 to 50<br>
+                <input type="radio" name="size" value="200"> 50 to 200<br>
+                <input type="radio" name="size" value="over200"> over 200<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Service:</td>
+            <td>
+                <input type="checkbox" name="Service" value="brand"> Brand Identity
+                <input type="checkbox" name="Service" value="brand"> New Website
+                <input type="checkbox" name="Service" value="brand"> Web redesign
+            </td>
+        </tr>
+        <tr>
+            <td>Timeline: </td>
+            <td>
+                <select>
+                    <option>Immediately</option>
+                    <option>1-2 weeks</option>
+                    <option>3-6 weeks</option>
+                    <option>7-2 months</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" name="Send to dev/design">
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+</form>
+<hr>
+</body>
+</html>
