@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gio Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 20px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  color: gray;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.hero-img img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+}
+
+/* CARD SECTIONS */
+.card {
+  margin: 40px auto;
+  width: 80%;
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+}
+
+/* SKILLS */
+.skills {
+  margin-top: 15px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #38bdf8;
+  color: black;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.project-box {
+ 
+  display: block; /* THIS FIXES IT */
+  padding: 15px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  transition: 0.3s;
+  text-decoration: none; /* removes underline */
+  color: white; /* keeps text visible */
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+  background: rgba(56,189,248,0.2);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(255,255,255,0.05);
+}
+</style>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">MyPortfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm <span>GIO MUÑOZ</span></h2>
+       <p>
+            Sapang Maisac, Mexico, Pampanga<br>
+            gio534914@gmail.com<br>
+            +639 656 395 127
+        </p>
+
+        <p>
+           <b> Welcome to my Enterprise Data Management Portfolio!</b> 
+           This portfolio contains my <b>EDM</b> lab exercises,<br> showcasing my skills 
+           in organizing, managing, and handling data based on what I learned in class.
+        </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/profile.jpg" >
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+        I’m Gio, an Information Technology student,I am a friendly and kind person who loves to learn new things. I enjoy learning new things and improving my computer skills.
+     
+    </p>
+  </section>
+
+  <!--EDUCATION-->
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <b>Current</b>: Pampanga State Agricultural University | <b><i>BSIT</i></b><br>
+    <b>Senior High School</b>: Don Jesus Gonzales High School | <b><i>GAS</i></b>
+    
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+        <img src="images/python-removebg-preview.png" style="width: 5pc; height: 5pc; ">
+        <img src="images/java.png" style="width: 6pc; height: 6pc; ">
+        <img src="images/html-removebg-preview.png" style="width: 6pc; height: 6pc; ">
+     
+    </div>
+  </section>
+
+  <!--EDUCATION-->
+  <section id="projects" class="card">
+  <h2>My Projects</h2>
+
+  <!-- MIDTERMS -->
+  <h3 class="project-title">Midterms Projects</h3>
+  <div class="projects">
+
+    <a href="FOLDER/RESUME(MLT1)/index.html" class="project-box">
+      <h3>Midterm  Task 1</h3>
+      <p>Resume</p>
+    </a>  
+
+    <a href="FOLDER/LISTS(MLT2)/index.html" class="project-box">
+      <h3> Midterm  Task 2</h3>   
+      <p>Table Lists</p>
+    </a>
+
+    <a href="FOLDER/FORMS(MLT3)/index.html" class="project-box">
+      <h3>Midterm Task 3 </h3>
+      <p>HTML Forms</p>
+    </a>
+
+     <a href="FOLDER/IMAGE MAP(MLT4)/index.html" class="project-box">
+      <h3>Midterm Task 4</h3>
+      <p>Image Map</p>
+    </a>
+
+     <a href="FOLDER/RESUME DESIGN(MLT5)/index.html" class="project-box">
+      <h3>Midterm Task 5</h3>
+      <p>Applying CSS</p>
+    </a>
+
+     <a href="FOLDER/DISPLAY(MLT6)/index.html" class="project-box">
+      <h3>Midterm Task 6</h3>
+      <p>Display Property</p>
+    </a>
+
+     <a href="FOLDER/SEMANTIC(MLT7)/index.html" class="project-box">
+      <h3>Midterm Task 7</h3>
+      <p>Semantic Display</p>
+    </a>
+
+  </div>
+
+  <!-- FINALS -->
+  <h3 class="project-title">Finals Projects</h3>
+  <div class="projects">
+
+    <a href="/FOLDER/CSS POSITIONS(FLT1)/index.html" class="project-box">
+      <h3>Finals Task 1</h3>
+      <p>CSS Positions</p>
+    </a>
+
+    <a href="FOLDER/FLEXBOX(FLT2)/index.html" class="project-box">
+      <h3>Finals Task 2</h3>
+      <p>CSS Flex Box</p>
+    </a>
+
+    <a href="FOLDER/BOOTSRTAP(FLT3)/index.html" class="project-box">
+      <h3>Finals Task 3</h3>
+      <p>Bootstrap</p>
+    </a>
+
+
+  </div>
+
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+
+     <a href="https://www.facebook.com/share/185butd952/" target="_blank" style="text-decoration: none;">
+        <img src="IMAGES/fb-removebg-preview.png" style="width: 5pc; height: 5pc;">
+    </a>
+
+    <a href="https://www.instagram.com/d4tboi.gio?igsh=MTRqNzdoem91eDh4Nw==" target="_blank" style="text-decoration: none;">
+        <img src="IMAGES/ig-removebg-preview.png" style="width: 5pc; height: 5pc;">
+    </a>
+
+    <a href="https://www.tiktok.com/@giomunoz_?_r=1&_t=ZS-93WP4lqm8u5" target="_blank" style="text-decoration: none;">
+        <img src="IMAGES/tiktok-removebg-preview.png" style="width: 5pc; height: 5pc;">
+    </a>
+
+     <a href="mailto:gio534914@gmail.com" target="_blank" style="text-decoration: none;">
+        <img src="IMAGES/gmail-removebg-preview (1).png" style="width: 5pc; height: 5pc;">
+    </a>
+    
+  </section>
+
+</body>
+</html>

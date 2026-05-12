@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Position</title>
+
+<style>
+
+body{
+height:3000px;
+font-family: Arial;
+}
+
+/* Close button */
+.close{
+position:absolute;
+top:10px;
+right:10px;
+background:black;
+color:white;
+width:40px;
+height:40px;
+border-radius:50%;
+text-align:center;
+line-height:40px;
+font-size:20px;
+}
+
+/* Fixed box */
+.fixedbox{
+position:fixed;
+bottom:20px;
+right:20px;
+width:320px;
+height:180px;
+background:lightgray;
+}
+
+/* Product container */
+.container{
+position:relative;
+display:inline-block;
+margin:40px;
+border:10px solid lightgray;
+}
+
+/* Discount label */
+.discount{
+position:absolute;
+top:10px;
+right:10px;
+background:black;
+color:white;
+padding:5px;
+font-size:14px;
+}
+
+/* Add to cart */
+.cart{
+position:absolute;
+bottom:0;
+width:100%;
+background:rgba(255,255,255,0.7);
+text-align:center;
+padding:15px;
+}
+
+button{
+padding:8px 15px;
+border:1px solid black;
+background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Close button -->
+<div class="close">X</div>
+
+<!-- Fixed div -->
+<div class="fixedbox"></div>
+
+<br><br><br>
+
+<!-- Product 1 -->
+<div class="container">
+<img src="shirt.jpg" width="250">
+
+<div class="discount">
+20% OFF
+</div>
+
+</div>
+
+<!-- Product 2 -->
+<div class="container">
+
+<img src="shirt.jpg" width="250">
+
+<div class="discount">
+20% OFF
+</div>
+
+<div class="cart">
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</body>
+</html>

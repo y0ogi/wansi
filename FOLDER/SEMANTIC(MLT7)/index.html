@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+</head>
+<style>
+ #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: grey;     
+    }
+
+    #navbar li {
+        float: left;
+    }
+
+    #navbar a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+
+    }
+
+    #navbar li a:hover {
+        background-color: orange;
+    }
+
+    #navbar2 ul {
+        list-style-type: none;
+        margin: 5px;
+        padding: 0;
+        width: 23%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    #navbar2 li a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: black;
+        background-color: beige;
+        text-align: center;
+        margin: 3px;
+        border-radius: 5px;
+    }
+
+
+    body {
+        margin: 0;
+        background-color: bisque;
+       
+    }
+    header {
+       background-color: rgb(84, 69, 42);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+
+   
+
+    main {
+        background-color: grey;
+        height: auto;
+    }
+    aside {
+        background-color: orange;
+        width: 23%;
+        float: left;
+        margin: 5px;
+        
+    }
+    section {
+        background-color: burlywood;
+        width: 23%;
+        float: left;
+        margin: 5px;
+    }
+    article {
+        background-color: orange;
+        width: 23%;
+        float: left;
+        margin: 5px;
+    }
+    footer {
+        background-color: rgb(84, 69, 42);
+        height: 100px;
+        clear: both;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        text-align: justify;
+        margin: 20px;
+    }
+    
+    @media screen and (max-width:800px)
+    {
+     aside, section, article
+    {
+        width: 100%;
+    }
+    }
+</style>
+<body>
+  <header>
+    <h1>Header</h1>
+    </header>
+
+  
+    <nav id="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+  </navbar>
+
+<main>
+
+    <nav id="navbar2">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+  </navbar2>
+
+    <aside>
+ <h1>Aside</h1>
+<p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, vel nobis iusto iste aspernatur blanditiis natus earum hic consequatur repellendus vero doloremque mollitia? Nemo dolor, exercitationem veritatis ducimus sequi nihil! 
+</p>
+    </aside>
+
+    <section>
+ <h1>Section</h1>
+<p>
+   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quam commodi esse, temporibus possimus, tempora, amet recusandae modi explicabo quo eius nobis perspiciatis? Pariatur debitis, nemo sint porro quasi nostrum!
+</p>
+    </section>
+
+    <article>
+         <h1>Article</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. At animi dicta excepturi dolores commodi, neque aut quasi accusamus quis officia deserunt mollitia deleniti vero illo distinctio numquam? Animi, dolor perspiciatis?
+    </article>
+    
+</main>
+   <footer>
+     <h1>Footer</h1>
+   </footer>
+</body>
+</html>

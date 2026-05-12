@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab task 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .textbox{
+            display: block;
+            width: 250px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .survey-container{
+            margin-top: 20px;
+        }
+
+        .survey-text{
+            display: inline-block;
+            width: 300px;
+            vertical-align: middle;
+        }
+
+        .survey-btn{
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+
+  
+        .google-section{
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .google-logo{
+            width: 200px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        .google-search{
+            width: 400px;
+            padding: 8px;
+        }
+
+    
+        .signup-box{
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 40px;
+        }
+
+        .inline-input{
+            display: inline-block;
+            width: 45%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .email-input{
+            display: block;
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .signup-btn{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4a77d4;
+            color: white;
+            border: none;
+        }
+
+       
+        .uber-box{
+            width: 350px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 40px;
+        }
+
+        .uber-input{
+            display: block;
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #eee;
+            border: none;
+        }
+
+        .uber-btn{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: none;
+        }
+
+        .black{
+            background-color: black;
+            color: white;
+        }
+
+        .gray{
+            background-color: #ddd;
+        }
+
+
+</style>
+<body>
+    
+    <div>
+        <input type="text" placeholder="Name" class="textbox">
+        <input type="email" placeholder="Email" class="textbox">
+    </div>
+    
+    <div class="survey-container">
+        <p class="survey-text">
+            Thanks for chatting with our customer support.
+            Would you like to take our quick survey?
+        </p>
+        <button class="survey-btn">Yes</button>
+        <button class="survey-btn">No</button>
+    </div>
+    
+    <div class="google-section">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+        class="google-logo">
+        <form action="https://wwww.google.com/search" method="get">
+        <input type="text" placeholder="Search Google or type a URL" class="google-search">
+        </form>
+    </div>
+
+    <div class="signup-box">
+        <input type="text" placeholder="First name" class="inline-input">
+        <input type="text" placeholder="Last name" class="inline-input">
+        <input type="email" placeholder="Email" class="email-input">
+        <button class="signup-btn">Sign Up</button>
+    </div>
+   
+    <div class="uber-box">
+        <h2>Request a ride now</h2>
+        <input type="text" placeholder="Enter pickup location" class="uber-input">
+        <input type="text" placeholder="Enter destination" class="uber-input">
+
+        <button class="uber-btn black">Request now</button>
+        <button class="uber-btn gray">Schedule for later</button>
+    </div>
+
+</body>
+</html>
